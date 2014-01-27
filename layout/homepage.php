@@ -40,6 +40,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
+    
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -57,16 +58,27 @@ echo $OUTPUT->doctype() ?>
  <h1 class="headermain logo"></h1>    
 </div>
     
-    <div id="studio-menu">
-        <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-        <ul>
-            <li><a href="<?php echo $CFG->wwwroot; ?>" class="active">Studio Home</a></li>
-            <li><?php include('includes/loginlogout.php'); ?></li>
-            <li><a href="http://www.askoxford.com/betterwriting/classicerrors/?view=uk">Spelling Tips</a></li>
-            <li><a href="http://www.askoxford.com/betterwriting/plainenglish/?view=uk">Plain English</a></li>
-            <li><a href="http://www.writersguild.org.uk">Writer's Guild</a></li>
-        </ul>
-    </div>
+    
+<header class="navbar navbar-default">
+    <nav role="navigation" class="navbar-inner">
+        <div id="studio-menu" class="container-fluid">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="nav-collapse collapse">
+                <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+                <ul class="nav nav-tabs">
+                    <li><a href="<?php echo $CFG->wwwroot; ?>" class="active">Studio Home</a></li>
+                    <li><?php include('includes/loginlogout.php'); ?></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
 <div id="studio-menubottom"></div>
 </div><!-- ends studio-header-wrap-->
 

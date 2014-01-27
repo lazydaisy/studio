@@ -247,29 +247,33 @@ h1.headermain.logosml
 }
 
 
-#studio-headercontent h1, #studio-headercontent h2 { padding-left: 5px;  text-align: left;}
-#studio-headercontent h1 { font-size: 1.5em;  padding-top: 15px; }
-#studio-headercontent h2, #studio-headercontent h3 { font-size: 0.85em;}
-#studio-headercontent h2 { text-align: right; padding-right: 5px;}
-
-
-
 /* Menu */
 
-#studio-menu
-{
-position: relative;
-background: #7F8400 url([[pix:theme|images/menubg]]) repeat-x top left;
-height: 3.5em;
-padding: 0em 1.0em 0em 1.0em;
-margin-bottom: 2px;
-text-transform: capitalize;
+.navbar-inner {
+    background: none;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 40;
+    padding: 0;
+}
+
+header.navbar {
+    background: #7F8400 url([[pix:theme|images/menubg]]) repeat left top;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+#studio-menu {
+    position: relative;
+    height: 3.5em;
+    padding: 0em 1.0em 0em 1.0em;
+    text-transform: capitalize;
 }
 
 #studio-menu ul
 {
-position: absolute;
-top: 1.1em;
+padding-top: 0.5em;
 }
 
 #studio-menu ul li
@@ -530,16 +534,14 @@ table.loginbox
   background-color: transparent;
 }
 
-.block
-{
-  background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
-  margin-bottom: 1.0em;
-  border-bottom: dotted 1px #E1D2BD;
+.block {
+    background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
+    margin-bottom: 1.0em;
+    border-bottom: dotted 1px #E1D2BD;
 }
 
-.block .post .head
-{
-  color: #000;
+.block .post .head {
+    color: #000;
 }
 
 .block .content
@@ -664,60 +666,6 @@ table.minicalendar tr td
   font-size:0.7em;
 }
 
-/* Course */
-
-.coursename
-{
-  border-width:1px;
-  border-style:solid;
-  padding:5px;
-}
-
-
-.categorybox .category,
-.categorybox .category
-{
-  padding-top: 7px;
-}
-
-.categorybox td
-{
-  background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
-  margin-bottom: 1.0em;
-  border-bottom: 1px solid #E1D2BD;
-}
-
-#course-view .section .left {
-  border-right-width: 1px;
-  border-right-style: dashed;
-}
-
-#course-view .section.hidden .content,
-#course-view .section.hidden .side
-{
-  border-width: 1px;
-  border-style: dashed;
-}
-
-#course-view .section td.content ul.section.img-text
-{
-  line-height: 22px;
-}
-
-
-#course-view .section td.content ul.section.img-text li.activity.label {
-  line-height: 16px;
-  margin-bottom: 5px;
-}
-
-.coursebox .info .name
-{
-  padding-bottom: 5px;
-}
-
-.tabrow0 {
-  padding-top: 4px;
-}
 
 /* Modules: glossary */
 
@@ -993,57 +941,6 @@ color: #B96D00;
 }
 
 
-  /* Course */
-
-.headingblock {
-  border-color:#FDFCF6;
-}
-
-.coursebox {
-  border-color:#FDFCF6;
-  background: #fff;
-}
-
-.coursebox .info {
- background: #EDEAE4;
-}
-
-.categoryboxcontent,
-.courseboxcontent {
-  border-color:#FDFCF6;
-  background: #FFFFFF;
-}
-
-.categorybox .category,
-.categorybox .category
-{
-  border-color: #FDFCF6;
-}
-
-#course-view .section .content
-{
-  border-color: #FDFCF6;
-  background-color: #FFFFFF;
-}
-
-#course-view .section .side
-{
-  border-color: #FDFCF6;
-  background-color: #FFFFFF;
-}
-
-#course-view .current .right.side,
-#course-view .current .left.side
-{
-  background-color: #FDFCF6;
-}
-
-#course-view .section.hidden .content,
-#course-view .section.hidden .side
-{
-  border-color:#FDFCF6;
-}
-
 /* Modules: Forum */
 
 .forumheaderlist,
@@ -1262,21 +1159,6 @@ border-width: 0px;
   border-color: #E1D2BD;
 }
 
-#adminsettings .form-setting .htmlarea { width: 475px;}
-
-#adminsettings .form-setting .htmlarea .toolbar table td{display:inline-block;}
-
-#adminsettings .form-label label{ font-size: 0.5em;}
-
-#adminsettings .form-description {
-  display: block;
-  margin:0.5em 0 0 18.5em;
-  text-align:left;
-  font-size: 0.75em;
-  color: red;
-  width: 200px;
-}
-
  /* Blog Tag Cloud - Font Variation */
 
    li a.s1{font-size:7px;}
@@ -1332,5 +1214,24 @@ div.header,
 }
 #studio-menu ul {
     margin: 0;
+}
+
+.coursebox > .info > .coursename a {
+    background-image: url([[pix:core|i/course]]);
+    background-position: left 50%;
+    background-repeat: no-repeat;
+    float: left;
+    line-height: 1;
+    padding-left: 21px;
+    vertical-align: middle;
+ }
+.coursebox .info {
+    background-color: white;
+    background-image: none;
+}
+
+.courses .coursebox:hover,
+.course_category_tree .courses > .paging.paging-morelink:hover {
+    background: none;
 }
 /* End */

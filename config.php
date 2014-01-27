@@ -81,6 +81,11 @@ $THEME->layouts = array(
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
     ),
+    'login' => array(
+        'file' => 'default.php',
+        'regions' => array(),
+        'options' => array('langmenu'=>true, 'nonavbar'=>true),
+    ),    
     // My dashboard page.
     'mydashboard' => array(
         'file' => 'default.php',
