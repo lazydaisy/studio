@@ -37,7 +37,7 @@ $THEME->name = 'studio';
 //////////////////////////////////
 //
 $THEME->doctype = 'html5';
-$THEME->parents = array('bootstrapbase');
+$THEME->parents = array('clean', 'bootstrapbase');
 $THEME->sheets = array('custom', 'studio_styles');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();

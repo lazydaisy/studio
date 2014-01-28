@@ -302,25 +302,6 @@ header.navbar {
     height: 14px;
     margin-bottom: 0.2em;
 }
-.nav-tabs > li > a {
-    border: 0 none;
-    border-radius: 0;
-}
-
-   /* Table Layout - Three Columns */
-
-#left-column, #right-column {
-    padding: 0px;
-    min-width: 210px;
-    background-color: #fff;
-}
-
-#layout-table #middle-column{
-  vertical-align:top;
-  padding-left:12px;
-  padding-right:12px;
-  width:100%;
-}
 
    /* Site Topic */
 
@@ -348,31 +329,8 @@ header.navbar {
 
 }
 
-  /* Clearfix */
-
-.clearfix
-{
-  min-width: 0;
- /* overflow: hidden; */
-}
-
-.clearfix:after {
-  /* content: "<!-- -->";  */
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-/* End hide from IE-mac */
-
-
 /* Navbar */
-.navbar
+.breadcrumb
 {
   background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
   margin-bottom: 1.0em;
@@ -1227,4 +1185,30 @@ div.header,
 .course_category_tree .courses > .paging.paging-morelink:hover {
     background: none;
 }
+
+.navbar .btn-navbar .icon-bar {
+  background-color: #333;
+  width: 25px;
+  height: 3px;
+}
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+    background-color: transparent;
+    background: #7F8400 url([[pix:theme|images/menuactive]]) repeat-x top left;
+}
+
+.navbar .btn-navbar {
+    background-color: #890;
+    background-image: none;
+    background-repeat: repeat-x;
+    border: 0 none;
+    margin-top: 7px;
+    padding:10px;
+}
+
+
 /* End */
