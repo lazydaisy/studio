@@ -1,26 +1,21 @@
 /* Moodle 2.7 - Studio Theme */
 
 * {
-padding: 0em;
-margin: 0em;
+    padding: 0em;
+    margin: 0em;
 }
 
-
-body
-{
-background: #ffc url([[pix:theme|images/studio-bodybg]]) repeat fixed;
-padding: 35px 0px;
-text-align: center;
+body {
+    background: #ffc url([[pix:theme|images/studio-bodybg]]) repeat fixed;
+    padding: 35px 0px;
+    text-align: center;
 }
-
-
 body, table, td, th, li, h1, h2, h3, h4, h5, h6,
 .forumpost, .topic, .subject, .headingblock, .header,
-.categorybox .category, .name
-{
-  font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
-  font-size: 0.95em;
-  font-weight: normal;
+.categorybox .category, .name {
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 0.95em;
+    font-weight: normal;
 }
 
   /* Header Tags - Main */
@@ -31,219 +26,166 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: left;
-  padding-left: 5px;
+    text-align: left;
+    padding-left: 5px;
 }
-
 p {
-        line-height: 1.5em;
+    line-height: 1.5em;
 }
-
 a:link, a:visited {
-    color: #B96D00 !important;
+    color: #B96D00;
     text-decoration: none;
 }
-
 a.dimmed:link,
 a.dimmed:visited {
-  color:#AAAAAA;
+    color:#AAAAAA;
 }
-
 a:hover {
-  color: #B96D00;
-  text-decoration: underline;
+    color: #B96D00;
+    text-decoration: underline;
 }
-
 a.autolink:link,
 a.autolink:visited {
-  color: #B96D00;
-  background: transparent;
+    color: #B96D00;
+    background: transparent;
 }
-
 a.autolink.glossary:hover {
-  cursor: help;
+    cursor: help;
 }
-
 img.userpicture,
 img.grouppicture {
-  border: 0 none
+    border: 0 none
 }
-
 .block_online_users .listentry img {
-  border: 0 none;
+    border: 0 none;
+}
+h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+h2 {
+    font-size:1.15em;
+}
+h3 span {
+    font-weight: normal;
+}
+h3,h4 {
+    display: inline;
+    font-weight: bold;
+}
+h3 {
+    font-size: 1.1em;
+    padding-right: 34px;
+}
+h4 {
+    font-size: 1.2em;
+    padding-right: 28px;
+    line-height: 2em;
 }
 
-h1
-{
-  font-size: 1.2em;
-  font-weight: bold;
+h5 {
+    font-size: 0.85em;
+    padding-bottom: 10px;
 }
-
-h2
-{
-  font-size:1.15em;
-}
-
-h3 span
-{
-font-weight: normal;
-}
-
-h3,h4
-{
-display: inline;
-font-weight: bold;
-}
-
-h3
-{
- font-size: 1.1em;
- padding-right: 34px;
-}
-
-h4
-{
-font-size: 1.2em;
-padding-right: 28px;
-line-height: 2em;
-}
-
-h5
-{
-  font-size: 0.85em;
-  padding-bottom: 10px;
-}
-
 
  /* Images - All */
 
-img
-{
-border: 0px none;
+img {
+    border: 0px none;
+}
+img.center {
+    display: block;
+    text-align: center;
+    margin: 0 auto 1.4em;
 }
 
-img.center
-{
-display: block;
-text-align: center;
-margin: 0em auto 1.4em auto;
+img.left {
+    position: relative;
+    float: left;
+    margin: 0em 1.8em 1.4em 0em;
 }
 
-img.left
-{
-position: relative;
-float: left;
-margin: 0em 1.8em 1.4em 0em;
-}
-
-img.right
-{
-position: relative;
-float: right;
-margin: 0em 0em 1.8em 1.8em;
+img.right {
+    position: relative;
+    float: right;
+    margin: 0em 0em 1.8em 1.8em;
 }
 
  /* Page Dividers */
 
-.divider1
-{
-position: relative;
-background: #fff url([[pix:theme|images/border2]]) repeat-x;
-height: 14px;
-margin: 2.0em 0em 1.5em 0em;
-clear: both;
+.divider1 {
+    position: relative;
+    background: #fff url([[pix:theme|images/border2]]) repeat-x;
+    height: 14px;
+    margin: 2.0em 0em 1.5em 0em;
+    clear: both;
 }
 
-.divider2
-{
-position: relative;
-height: 1px;
-border-bottom: solid 1px #eaeaea;
-margin: 2.0em 0em 2.0em 0em;
+.divider2 {
+    position: relative;
+    height: 1px;
+    border-bottom: solid 1px #eaeaea;
+    margin: 2.0em 0em 2.0em 0em;
 }
-
-.post .details
-
-ul.linklist
-{
-list-style: none;
+ul.linklist {
+    list-style: none;
 }
-
-ul.linklist li
-{
-line-height: 2.0em;
+ul.linklist li {
+    line-height: 2.0em;
 }
-
-#page
-{
-/*
-    The width value below controls the overall width of the design. By default it's set to 82%
-    (so it'll take up 82% of the browser window's width). You can set it to a different percentage
-    value (70%, 90%, etc.) or even a pixel value (760px, 800px, etc.) to enforce a fixed width.
-*/
-width: 90%;
-border: solid 7px #fff;
-background-color: #fff;
-margin: 0 auto;
-text-align: left;
+#page {
+    /*
+        The width value below controls the overall width of the design. By default it's set to 82%
+        (so it'll take up 82% of the browser window's width). You can set it to a different percentage
+        value (70%, 90%, etc.) or even a pixel value (760px, 800px, etc.) to enforce a fixed width.
+    */
+    width: 90%;
+    border: solid 7px #fff;
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: left;
 }
-
 
 /* Header  */
 
-#studio-header-wrap
-{
-z-index: 1;
-position: relative;
-width: 100%;
-background-color: #fff;
-margin: 0 auto;
+#studio-header-wrap {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
 }
-
-#header-home .headermenu
-{
-  font-size:.8em;
+#header-home .headermenu {
+    font-size:.8em;
 }
-
-#header-home, #header
-{
-  background-color: #fff;
+#header-home, #header {
+    background-color: #fff;
 }
-
-h1.headermain
-{
+h1.headermain {
   background-color: transparent;
   margin-top: 0;
 }
-
-#page-header.home
-{
-  position: relative;
-  height: 150px;
-  background: #ffc url([[pix:theme|images/studio-headerhomebg]]) repeat-x top left;
-  margin-bottom: 2px;
+#page-header.home {
+    position: relative;
+    height: 150px;
+    background: #ffc url([[pix:theme|images/studio-headerhomebg]]) repeat-x top left;
+    margin-bottom: 2px;
+}
+h1.headermain.logo {
+    height: 150px;
+    width: 100%;
+    background: transparent url([[pix:theme|images/studio-logo]]) no-repeat center top;
+}
+#page-header {
+    position: relative;
+    height: 75px;
+    background: #ffc url([[pix:theme|images/studio-headerbg]]) repeat-x top left;
+    margin-bottom: 2px;
 }
 
-h1.headermain.logo
-{
-  height: 150px;
-  width: 100%;
-  background: transparent url([[pix:theme|images/studio-logo]]) no-repeat center top;
-}
-
-#page-header
-{
-  position: relative;
-  height: 75px;
-  background: #ffc url([[pix:theme|images/studio-headerbg]]) repeat-x top left;
-  margin-bottom: 2px;
-}
-
-h1.headermain.logosml
-{
+h1.headermain.logosml {
   height: 75px; width: 100%; background: transparent url([[pix:theme|images/studio-logosml]]) no-repeat center top;
 }
-
 
 /* Menu */
 
@@ -252,94 +194,82 @@ h1.headermain.logosml
     border: 0 none;
     border-radius: 0;
     box-shadow: none;
-    min-height: 40;
+    min-height: 40px;
     padding: 0;
 }
-
 header.navbar {
     background: #7F8400 url([[pix:theme|images/menubg]]) repeat left top;
     padding: 0;
     margin-bottom: 2px;
 }
-
 #studio-menu {
     position: relative;
     height: 3.5em;
     padding: 0em 1.0em 0em 1.0em;
     text-transform: capitalize;
 }
-
 #studio-menu ul {
     padding-top: 0.5em;
 }
-
 #studio-menu ul li {
     position: relative;
     display: inline;
 }
-
 #studio-menu ul li a {
     padding: 0.5em 1.0em 0.9em;
     color: #B96D00;
     text-decoration: none;
     text-shadow: 0 1px 0 #FFFFFF;
 }
-
 #studio-menu ul li a:link {
     background: #7F8400 url([[pix:theme|images/menu]]) repeat-x top left;
     color: #B96D00;
     text-decoration: none;
     text-shadow: 0 1px 0 #FFFFFF;
 }
-
 #studio-menu ul li a:hover,
 #studio-menu ul li a.active {
     background: #7F8400 url([[pix:theme|images/menuactive]]) repeat-x top left;
 }
-
 #studio-menubottom {
     background: #fff url([[pix:theme|images/border1]]) repeat-x;
     height: 14px;
     margin-bottom: 0.2em;
 }
 
-   /* Site Topic */
+/* Site Topic */
 
-  .sitetopic {
-  padding:0 4px;
-  margin: 0px;
+.sitetopic {
+    padding: 0 4px;
+    margin: 0px;
 }
 
-.sitetopiccontent
-{
-  border-width:0px;
+.sitetopiccontent {
+    border-width:0px;
 }
 
-  /* General Table - General Box */
+ /* General Table - General Box */
 
-.generaltable
-{
-  width: 100%;
-  border: 1px dotted;
+.generaltable {
+    width: 100%;
+    border: 1px dotted;
 }
 
 .generalbox {
-  width: 95%;
-  border: 0px;
-
+    width: 95%;
+    border: 0px;
 }
 
 /* Navbar */
-.breadcrumb
-{
-  background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
-  margin-bottom: 1.0em;
-  border-color: #E1D2BD;
-  border-style: dotted;
-  border-width: 1px;
-  width: auto;
-  padding:3px 0.5em;
-  width:auto;
+.breadcrumb {
+    background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
+    margin-bottom: 1.0em;
+    border-color: #E1D2BD;
+    border-style: dotted;
+    border-width: 1px;
+    width: auto;
+    padding:3px 0.5em;
+    width:auto;
 }
 
 
@@ -924,237 +854,192 @@ background: transparent;
   border: 0;
   text-align: left;
 }
-
-.forumpost .content
-{
-  background: transparent url([[images/studio-openquote.png) no-repeat 0px 0px;
-  padding-top: 30px;
-  padding-right: 35px;
-  margin: 0;
-  width: 100%;
-  text-align: justify;
+.forumpost .content {
+    background: transparent;
+    background-image: url([[pix:theme|images/studio-openquote]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 30px;
+    padding-right: 35px;
+    margin: 0;
+    width: 100%;
+    text-align: justify;
 }
-
-.forumpost .posting
-{
-  width: auto; margin: 0 auto;
+.forumpost .posting {
+    width: auto;
+    margin: 0 auto;
 }
-
-.forumpost div.commands
-{
-  padding-top: 30px;
-  background-color: transparent;
-  background-image: url([[images/studio-closequote.png);
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+.forumpost div.commands {
+    padding-top: 30px;
+    background-color: transparent;
+    background-image:  url([[pix:theme|images/studio-closequote]]);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
 }
-
 .forumpost div.commands,
-.forumpost div.link
-{
- font-size: 80%;
+.forumpost div.link {
+    font-size: 80%;
 }
-
-
 .forumpost .left {
 padding: 0px;
 vertical-align:top;
 }
-
 .forumpost .topic .author {
-font-size:0.8em;
-visibility: hidden;
+    font-size:0.8em;
+    visibility: hidden;
 }
-
 .forumheaderlist .discussion .starter {
-  background: transparent;
+    background: transparent;
 }
-
 .forumheaderlist td {
-  border: 0 none;
+    border: 0 none;
 }
 
-.forumthread .unread
-{
-  background: #fff;
+.forumthread .unread {
+    background: #fff;
 }
-
-table.forumpost
-{
-  background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
-  margin: 0 0 1em 0;
-  padding: 0;
-  border-bottom: dotted 1px #E1D2BD;
+table.forumpost {
+    background: #FDFCF6 url([[pix:theme|images/boxbg]]) repeat-x;
+    margin: 0 0 1em 0;
+    padding: 0;
+    border-bottom: dotted 1px #E1D2BD;
 }
-
-.subject
-{
-  padding-top: 10px;
-  font-size: 1.5em;
-  font-family: 'Lucida Handwriting', sans-serif;
-  font-weight: normal;
-  font-weight: bold;
-  color: #7F8400;
-  text-align: left;
-  text-transform: capitalize;
-  text-decoration: underline;
+.subject {
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-family: 'Lucida Handwriting', sans-serif;
+    font-weight: normal;
+    font-weight: bold;
+    color: #7F8400;
+    text-align: left;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
-
 /* Modules: glossary */
 
 .picture,
 .entryattachment,
-.entryapproval
-{
-  background-color: #fff;
+.entryapproval {
+    background-color: #fff;
 }
-
 .glossarypost.dictionary,
 .glossarypost.fullwithauthor,
 .glossarypost.fullwithoutauthor,
 .glossarypost.continuous,
 .glossarypost.encyclopedia,
-.glossarypost.faq
-{
-  border-color: #333;
-  background-color: #FFFFFF;
+.glossarypost.faq {
+    border-color: #333;
+    background-color: #FFFFFF;
 }
-
-.glossarycategoryheader th
-{
-  background-color: #fff;
+.glossarycategoryheader th {
+    background-color: #fff;
 }
-
-
 .glossarycategoryheader h2,
-.glossarypost .concept h3
-{
-  background-color: #fff
+.glossarypost .concept h3 {
+    background-color: #fff
 }
-
 .glossarypost .entryheader,
 .glossarypost .entryapproval,
 .glossarypost .picture,
 .glossarypost .entryattachment,
-.glossarypost .left
-{
-  background-color:#fff;
+.glossarypost .left {
+    background-color:#fff;
 }
 
 /* Error message */
 
 .errorbox {
-   color:#000000;
-   border-color:#333;
-   background-color:#fff;
- }
-
-.errorboxcontent {
-   background-color:#fff;
-
+    color:#000000;
+    border-color:#333;
+    background-color:#fff;
 }
-
+.errorboxcontent {
+    background-color:#fff;
+}
 
 /* Grade */
 
 .grade-report-grader table#user-grades td.cell span.gradepass {
-  background-color: #fff;
+    background-color: #fff;
 }
-
 .grade-report-grader table#user-grades td.cell span.gradefail {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 /* User */
 
 .userinfobox {
- border-color: #333;
+    border-color: #333;
 }
-
 .userinfobox .side {
- background-color: #fff;
+    background-color: #fff;
 }
-
 .userinfobox .content {
- background-color: #fff;
+    background-color: #fff;
 }
 
-
- /* User Image */
+/* User Image */
 
 img.userpicture, img.grouppicture {
-border-width: 0px;
+    border-width: 0px;
 }
-
-.userpicture
-{
-  visibility: hidden;
+.userpicture {
+    visibility: hidden;
 }
-
 .userpicture, .picture user, .picture teacher {
-  height:35px;
-  vertical-align:top;
-  width:35px;
+    height:35px;
+    vertical-align:top;
+    width:35px;
 }
 
-
- /* Admin */
+/* Admin */
 
 #adminsettings fieldset {
-  background-color: #FDFCF6;
-  background-image: url([[pix:theme|images/boxbg]]);
-  background-repeat: repeat-x;
-  margin-bottom: 1.0em;
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: #E1D2BD;
+    background-color: #FDFCF6;
+    background-image: url([[pix:theme|images/boxbg]]);
+    background-repeat: repeat-x;
+    margin-bottom: 1.0em;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #E1D2BD;
 }
 
  /* Blog Tag Cloud - Font Variation */
 
-   li a.s1{font-size:7px;}
-   li a.s2{font-size:9px;}
-   li a.s4{font-size:10px;}
-   li a.s5{font-size:11px;}
-   li a.s7{font-size:12px;}
-   li a.s8{font-size:13px;}
-   li a.s11{font-size:14px;}
-   li a.s14{font-size:15px;}
-   li a.s17{font-size:16px;}
-   li a.s20{font-size:17px;}
+    li a.s1{font-size:7px;}
+    li a.s2{font-size:9px;}
+    li a.s4{font-size:10px;}
+    li a.s5{font-size:11px;}
+    li a.s7{font-size:12px;}
+    li a.s8{font-size:13px;}
+    li a.s11{font-size:14px;}
+    li a.s14{font-size:15px;}
+    li a.s17{font-size:16px;}
+    li a.s20{font-size:17px;}
 
-
-.clearer
-{
-  font-size: 1px;
+.clearer {
+    font-size: 1px;
 }
-
 th {
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  font-weight: bold;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
 }
-
 th.header,
 td.header,
 div.header,
-.coursename
-{
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 0.9em;
+.coursename {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
 }
-
-.categorybox .category
-{
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
+.categorybox .category {
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
 }
-
-.generaltable td.cell.c0
-{
-  font-weight: bold;
+.generaltable td.cell.c0 {
+    font-weight: bold;
 }
 
 /* Bootstrap reset */
@@ -1187,9 +1072,9 @@ div.header,
 }
 
 .navbar .btn-navbar .icon-bar {
-  background-color: #333;
-  width: 25px;
-  height: 3px;
+    background-color: #333;
+    width: 25px;
+    height: 3px;
 }
 .navbar .btn-navbar:hover,
 .navbar .btn-navbar:focus,
