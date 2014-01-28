@@ -1200,7 +1200,6 @@ div.header,
     background-color: transparent;
     background: #7F8400 url([[pix:theme|images/menuactive]]) repeat-x top left;
 }
-
 .navbar .btn-navbar {
     background-color: #890;
     background-image: none;
@@ -1209,6 +1208,9 @@ div.header,
     margin-top: 7px;
     padding:10px;
 }
-
+.coursebox .content .courseimage img {
+    max-height: 100%;
+    max-width: 100%;
+}
 
 /* End */
