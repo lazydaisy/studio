@@ -55,7 +55,7 @@ $THEME->layouts = array(
         'file' => 'admin.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-    ),    
+    ),
     // Main course page.
     'course' => array(
         'file' => 'default.php',
@@ -74,7 +74,7 @@ $THEME->layouts = array(
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar'=>true),
-    ),    
+    ),
     // part of course, typical for modules - default page layout if $cm specified in require_login().
     'incourse' => array(
         'file' => 'default.php',
@@ -82,10 +82,10 @@ $THEME->layouts = array(
         'defaultregion' => 'side-pre',
     ),
     'login' => array(
-        'file' => 'default.php',
+        'file' => 'login.php',
         'regions' => array(),
-        'options' => array('langmenu'=>true, 'nonavbar'=>true),
-    ),    
+        'options' => array('langmenu'=>true, 'noblocks'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nocourseheaderfooter'=>true),
+    ),
     // My dashboard page.
     'mydashboard' => array(
         'file' => 'default.php',
@@ -104,19 +104,19 @@ $THEME->layouts = array(
         'file' => 'admin.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
-    ),   
+    ),
     // The pagelayout used for safebrowser and securewindow.
     'secure' => array(
         'file' => 'default.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologinlinks'=>true, 'nocourseheaderfooter'=>true),                                               
-    ),    
+        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'nocustommenu'=>true, 'nologinlinks'=>true, 'nocourseheaderfooter'=>true),
+    ),
     // Standard layout with blocks, this is recommended for most pages with general information.
     'standard' => array(
         'file' => 'default.php',
         'regions' => array('side-pre', 'side-post'),
         'defaultregion' => 'side-pre',
-    ),    
+    ),
 
 );

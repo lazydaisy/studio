@@ -27,7 +27,8 @@
  * @copyright 2014 byLazyDaisy.co.uk
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
+// Get the HTML for the settings bits.
+$html = theme_studio_get_html_for_settings($OUTPUT, $PAGE);
 
 if (right_to_left()) {
     $regionbsid = 'region-bs-main-and-post';
@@ -40,7 +41,7 @@ echo $OUTPUT->doctype() ?>
 <head>
     <title><?php echo $OUTPUT->page_title(); ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-    
+
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -54,11 +55,11 @@ echo $OUTPUT->doctype() ?>
 <div id="studio-header-wrap">
 
 
-<div id="page-header" class="home">    
- <h1 class="headermain logo"></h1>    
+<div id="page-header" class="home">
+ <h1 class="headermain logo"></h1>
 </div>
-    
-    
+
+
 <header class="navbar navbar-default">
     <nav role="navigation" class="navbar-inner">
         <div id="studio-menu" class="container-fluid">
@@ -88,19 +89,12 @@ echo $OUTPUT->doctype() ?>
         <nav class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></nav>
     </div>
 
-    <div id="course-header">
-        <?php echo $OUTPUT->course_header(); ?>
-    </div>
-    
-
     <div id="page-content" class="row-fluid">
         <div id="<?php echo $regionbsid ?>" class="span9">
             <div class="row-fluid">
                 <section id="region-main" class="span8 pull-right">
                     <?php
-                    echo $OUTPUT->course_content_header();
                     echo $OUTPUT->main_content();
-                    echo $OUTPUT->course_content_footer();
                     ?>
                 </section>
                 <?php echo $OUTPUT->blocks('side-pre', 'span4 desktop-first-column'); ?>
@@ -110,9 +104,9 @@ echo $OUTPUT->doctype() ?>
     </div>
 
     <footer id="page-footer">
-        <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
+        echo $html->footnote;
         echo $OUTPUT->login_info();
         echo $OUTPUT->home_link();
         echo $OUTPUT->standard_footer_html();

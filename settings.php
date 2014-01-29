@@ -32,19 +32,19 @@ defined('MOODLE_INTERNAL') || die;
 
 if ($ADMIN->fulltree) {
 
-    // Invert Navbar to dark background.
-    $name = 'theme_studio/invert';
-    $title = get_string('invert', 'theme_studio');
-    $description = get_string('invertdesc', 'theme_studio');
-    $setting = new admin_setting_configcheckbox($name, $title, $description, 0);
-    $setting->set_updatedcallback('theme_reset_all_caches');
-    $settings->add($setting);
-
     // Logo file setting.
     $name = 'theme_studio/logo';
     $title = get_string('logo','theme_studio');
     $description = get_string('logodesc', 'theme_studio');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
+    // Logo (small) file setting.
+    $name = 'theme_studio/logosml';
+    $title = get_string('logosml','theme_studio');
+    $description = get_string('logosmldesc', 'theme_studio');
+    $setting = new admin_setting_configstoredfile($name, $title, $description, 'logosml');
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 

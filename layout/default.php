@@ -24,9 +24,11 @@
  * http://docs.moodle.org/dev/Themes_2.0
  *
  * @package   theme_studio
- * @copyright 2013 Moodle, moodle.org
+ * @copyright 2014 byLazyDaisy.co.uk
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+// Get the HTML for the settings bits.
+$html = theme_studio_get_html_for_settings($OUTPUT, $PAGE);
 
 
 if (right_to_left()) {
@@ -52,10 +54,10 @@ echo $OUTPUT->doctype() ?>
 
 <div id="studio-header-wrap">
 
-<div id="page-header">    
- <h1 class="headermain logosml"></h1>    
+<div id="page-header">
+ <h1 class="headermain logosml"></h1>
 </div>
-    
+
 <header class="navbar navbar-default">
     <nav role="navigation" class="navbar-inner">
         <div id="studio-menu" class="container-fluid">
@@ -86,7 +88,7 @@ echo $OUTPUT->doctype() ?>
     <div id="course-header">
         <?php echo $OUTPUT->course_header(); ?>
     </div>
-    
+
 
     <div id="page-content" class="row-fluid">
         <div id="<?php echo $regionbsid ?>" class="span9">
@@ -108,6 +110,7 @@ echo $OUTPUT->doctype() ?>
         <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
+        echo $html->footnote;
         echo $OUTPUT->login_info();
         echo $OUTPUT->home_link();
         echo $OUTPUT->standard_footer_html();

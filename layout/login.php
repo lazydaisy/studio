@@ -30,8 +30,6 @@
 // Get the HTML for the settings bits.
 $html = theme_studio_get_html_for_settings($OUTPUT, $PAGE);
 
-$left = (!right_to_left());  // To know if to add 'pull-right' and 'desktop-first-column' classes in the layout for LTR.
-
 echo $OUTPUT->doctype() ?>
 <html <?php echo $OUTPUT->htmlattributes(); ?>>
 <head>
@@ -75,35 +73,15 @@ echo $OUTPUT->doctype() ?>
 </div><!-- ends studio-header-wrap-->
 
 
-    <div id="page-navbar" class="clearfix">
-        <div class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></div>
-        <nav class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></nav>
-    </div>
-
-    <div id="course-header">
-        <?php echo $OUTPUT->course_header(); ?>
-    </div>
-
-
     <div id="page-content" class="row-fluid">
-        <section id="region-main" class="span9<?php if ($left) { echo ' pull-right'; } ?>">
+        <section id="region-main" class="span12">
             <?php
-            echo $OUTPUT->course_content_header();
             echo $OUTPUT->main_content();
-            echo $OUTPUT->course_content_footer();
             ?>
         </section>
-        <?php
-        $classextra = '';
-        if ($left) {
-            $classextra = ' desktop-first-column';
-        }
-        echo $OUTPUT->blocks('side-pre', 'span3'.$classextra);
-        ?>
     </div>
 
     <footer id="page-footer">
-        <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
         echo $html->footnote;

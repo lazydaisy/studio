@@ -30,19 +30,8 @@ $string['choosereadme'] = '
 </div>
 <div class="well">
 <h3>About</h3>
-<p>Studio is a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
-<h3>Parents</h3>
-<p>This theme is based upon the Bootstrap theme, which was created for Moodle 2.5, with the help of:<br>
-Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
-<h3>Theme Credits</h3>
-<p>Authors: Bas Brands, David Scotson, Mary Evans<br>
-Contact: bas@sonsbeekmedia.nl<br>
-Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
-</p>
-<h3>Report a bug:</h3>
-<p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
-<h3>More information</h3>
-<p><a href="Studio/README.txt">How to copy and customise this theme.</a></p>
+<p>Studio is a modified Moodle bootstrap theme which inherits styles and renderers from its parent themes. The Studio theme first made its appearance as a Moodle 1.9 theme built by Mary Evans in 2010. The clean lines and simple style of this theme lends itself and, as such, has addapted well to the Bootstrap model.</p><h3>Parents themes</h3><p>Studio is based upon Clean and Bootstrapbase themes, which were created for Moodle 2.5, with the help of: Stuart Lamour, Mark Aberdour, Paul Hibbitts, Bas Brands, David Scotson and Mary Evans.</p><h3>Special thanks</h3><p>My thanks go to Gareth J.Barnard, from whom I have learned so much more about Moodle code and how it works. For his constant contributions to Themes in general, and also the various bug fixes in Moodle Tracker over the last twelve months, has helped make Moodle Bootstrap themes better. Not to mention the help and generosity in the Moodle Forums, and his unstinting work with Course Formats.</p><h3>Theme Credits</h3><p>Adapted from Zenlike Theme by NodeThirtyThree Design {@link: http://n33.co }</p><h3>Report a bug:</h3><p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
+<h3>More information</h3><p><a href="studio/README.html" target="_blank">README</a></p>
 </div></div>';
 
 $string['configtitle'] = 'Studio';
@@ -53,16 +42,14 @@ $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be 
 $string['footnote'] = 'Footnote';
 $string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
 
-$string['invert'] = 'Invert navbar';
-$string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
+$string['logo'] = 'Logo (home)';
+$string['logosml'] = 'Logo (small)';
 
-$string['logo'] = 'Logo';
-$string['logodesc'] = 'Please upload your custom logo here if you want to add it to the header.<br>
-If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
-a.logo {height: 100px;} or whatever height in pixels the logo is.';
+$string['logodesc'] = 'Please upload your custom logo here if you want to add it to the header.<br>If the height of your logo is more than 150px add the following CSS rule to the Custom CSS box below. &#35;page-header.home {height: 75px;} or whatever height in pixels the logo is.';
+
+$string['logosmldesc'] = 'Please upload your custom logo here if you want to add it to the header.<br>If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below. &#35;page-header {height: 75px;} or whatever height in pixels the logo is.';
 
 $string['pluginname'] = 'Studio';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
-
